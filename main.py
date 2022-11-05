@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import plotly.express as px
 import sys
 from IPython.display import display
 from typing import List, Tuple
@@ -63,14 +64,15 @@ def concat_dataframes(description: pd.Series, dataframe_container: List[Describe
     return result
 
 
-def count_ingredients(dataframe: DescribedDataFrame, pizzas_dataframe: DescribedDataFrame) -> Tuple:
+def count_ingredients(dataframe: DescribedDataFrame, pizzas_dataframe: DescribedDataFrame) -> Tuple[pd.Series,
+                                                                                                    pd.DataFrame]:
     pizzas_dataframe = pizzas_dataframe[['pizza_type_id', 'ingredients']].set_index('pizza_type_id')
 
     def check_missing_ingredients(ingredients: str):
         if 'Sauce' not in ingredients:
             ingredients += ', Tomato Sauce'
         if 'Mozzarella Cheese' not in ingredients:
-            ingredients += ',  Mozzarella Cheese'
+            ingredients += ', Mozzarella Cheese'
         return ingredients
 
     pizzas_dataframe['ingredients'] = pizzas_dataframe['ingredients'].apply(check_missing_ingredients)
@@ -97,4 +99,54 @@ def count_ingredients(dataframe: DescribedDataFrame, pizzas_dataframe: Described
     weeks.index.name = "week"
 
     weeks = weeks.explode('Ingredients').pivot_table(index="week", columns='Ingredients', aggfunc="size", fill_value=0)
+    weeks.reset_index(inplace=True)
+    weeks['week'] = weeks['week'].apply(int)
     return total_count, weeks
+
+
+def visualize_ingredients_consumed(series: pd.Series, dataframe: pd.DataFrame) -> None:
+    # Amount of total ingredients consumed by each type
+    series.sort_values(ascending=False, inplace=True)
+    fig = px.bar(series, labels={'ingredient': 'Ingredient', 'value': 'Amount consumed'},
+                 title='Amount of total ingredients consumed over a year by each Type',
+                 color="value", template='ggplot2')
+    fig.update_layout(showlegend=False)
+    fig.update_xaxes(tickangle=60)
+    fig.show()
+
+    # Amount and type of ingredients consumed each week
+    dataframe = dataframe.melt(id_vars='week', value_vars=dataframe.columns[1:])
+    display(dataframe)
+    fig = px.bar(dataframe, x='value', y='Ingredients', labels={'value': 'Amount consumed'},
+                 title='Amount of total ingredients consumed per week by each Type',
+                 color="value", template='ggplot2', animation_frame='week', height=950)
+    fig.update_layout(showlegend=False)
+    fig.update_xaxes(tickangle=60)
+    fig.show()
+    return
+
+
+def main():
+    description, dataframe_container = extract()
+
+    # Creating main dataframe to work with.
+    dataframe = concat_dataframes(description, dataframe_container)
+    dataframe.to_csv("processed_data/clean_dataframe.csv", sep=',')
+    display(dataframe)
+    # display(dataframe.describe())
+
+    # Now let's create some useful dataframes to solve our problem.
+    # Amount of total ingredients consumed by each type
+    pizza_types = dataframe_container[-1]
+    total_count, weeks = count_ingredients(dataframe, pizza_types)
+    display(total_count)
+
+    # Amount and type of ingredients consumed each week
+    weeks.to_csv("processed_data/ingredients_weeks.csv", sep=',')
+    display(weeks)
+
+    visualize_ingredients_consumed(total_count, weeks)
+
+
+if __name__ == '__main__':
+    sys.exit(main())
