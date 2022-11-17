@@ -46,3 +46,4 @@ how the amounts of ingredients used change each week is the way to go, in order 
 these ingredients follow.
 
 ## Predict near future:
+The median of the amount of ingredients is accurate enough, as the data have a high variance, and the median is less altered by outlayers than the mean. Implementing a more complex model, such as a Sequence, or Linear Regression, is not really needed for so small amounts of data (53 weeks).
