@@ -45,6 +45,8 @@ ingredients are more relevant/used in the business. When analysing this per week
 how the amounts of ingredients used change each week is the way to go, in order to tell the uses and tendencies
 these ingredients follow.
 
+Eventually, generating some reports on pdf and excel would be a great idea as well.
+
 ## Predict near future:
 The median of the amount of ingredients is accurate enough, as the data have a high variance, and the median is less
 altered by outlayers than the mean. Implementing a more complex model, such as a Sequence, or Linear Regression, is
