@@ -4,202 +4,202 @@
    <file name="name">
       prediction_ingredients
       <ingredient ingredient_name="Alfredo Sauce">
-         <amount name="nan_count">18.0</amount>
+         <amount name="amount">18.0</amount>
       </ingredient>
       <ingredient ingredient_name="Anchovies">
-         <amount name="nan_count">28.0</amount>
+         <amount name="amount">28.0</amount>
       </ingredient>
       <ingredient ingredient_name="Artichoke">
-         <amount name="nan_count">46.0</amount>
+         <amount name="amount">46.0</amount>
       </ingredient>
       <ingredient ingredient_name="Artichokes">
-         <amount name="nan_count">111.0</amount>
+         <amount name="amount">111.0</amount>
       </ingredient>
       <ingredient ingredient_name="Arugula">
-         <amount name="nan_count">28.0</amount>
+         <amount name="amount">28.0</amount>
       </ingredient>
       <ingredient ingredient_name="Asiago Cheese">
-         <amount name="nan_count">65.0</amount>
+         <amount name="amount">65.0</amount>
       </ingredient>
       <ingredient ingredient_name="Bacon">
-         <amount name="nan_count">83.0</amount>
+         <amount name="amount">83.0</amount>
       </ingredient>
       <ingredient ingredient_name="Barbecue Sauce">
-         <amount name="nan_count">48.0</amount>
+         <amount name="amount">48.0</amount>
       </ingredient>
       <ingredient ingredient_name="Barbecued Chicken">
-         <amount name="nan_count">48.0</amount>
+         <amount name="amount">48.0</amount>
       </ingredient>
       <ingredient ingredient_name="Beef Chuck Roast">
-         <amount name="nan_count">27.0</amount>
+         <amount name="amount">27.0</amount>
       </ingredient>
       <ingredient ingredient_name="Blue Cheese">
-         <amount name="nan_count">26.0</amount>
+         <amount name="amount">26.0</amount>
       </ingredient>
       <ingredient ingredient_name="Brie Carre Cheese">
-         <amount name="nan_count">9.0</amount>
+         <amount name="amount">9.0</amount>
       </ingredient>
       <ingredient ingredient_name="Calabrese Salami">
-         <amount name="nan_count">36.0</amount>
+         <amount name="amount">36.0</amount>
       </ingredient>
       <ingredient ingredient_name="Capocollo">
-         <amount name="nan_count">129.0</amount>
+         <amount name="amount">129.0</amount>
       </ingredient>
       <ingredient ingredient_name="Caramelized Onions">
-         <amount name="nan_count">9.0</amount>
+         <amount name="amount">9.0</amount>
       </ingredient>
       <ingredient ingredient_name="Chicken">
-         <amount name="nan_count">165.0</amount>
+         <amount name="amount">165.0</amount>
       </ingredient>
       <ingredient ingredient_name="Chipotle Sauce">
-         <amount name="nan_count">66.0</amount>
+         <amount name="amount">66.0</amount>
       </ingredient>
       <ingredient ingredient_name="Chorizo Sausage">
-         <amount name="nan_count">36.0</amount>
+         <amount name="amount">36.0</amount>
       </ingredient>
       <ingredient ingredient_name="Cilantro">
-         <amount name="nan_count">66.0</amount>
+         <amount name="amount">66.0</amount>
       </ingredient>
       <ingredient ingredient_name="Coarse Sicilian Salami">
-         <amount name="nan_count">35.0</amount>
+         <amount name="amount">35.0</amount>
       </ingredient>
       <ingredient ingredient_name="Corn">
-         <amount name="nan_count">66.0</amount>
+         <amount name="amount">66.0</amount>
       </ingredient>
       <ingredient ingredient_name="Eggplant">
-         <amount name="nan_count">18.0</amount>
+         <amount name="amount">18.0</amount>
       </ingredient>
       <ingredient ingredient_name="Feta Cheese">
-         <amount name="nan_count">91.0</amount>
+         <amount name="amount">91.0</amount>
       </ingredient>
       <ingredient ingredient_name="Fontina Cheese">
-         <amount name="nan_count">64.0</amount>
+         <amount name="amount">64.0</amount>
       </ingredient>
       <ingredient ingredient_name="Friggitello Peppers">
-         <amount name="nan_count">18.0</amount>
+         <amount name="amount">18.0</amount>
       </ingredient>
       <ingredient ingredient_name="Garlic">
-         <amount name="nan_count">539.0</amount>
+         <amount name="amount">539.0</amount>
       </ingredient>
       <ingredient ingredient_name="Genoa Salami">
-         <amount name="nan_count">28.0</amount>
+         <amount name="amount">28.0</amount>
       </ingredient>
       <ingredient ingredient_name="Goat Cheese">
-         <amount name="nan_count">63.0</amount>
+         <amount name="amount">63.0</amount>
       </ingredient>
       <ingredient ingredient_name="Gorgonzola Piccante Cheese">
-         <amount name="nan_count">35.0</amount>
+         <amount name="amount">35.0</amount>
       </ingredient>
       <ingredient ingredient_name="Gouda Cheese">
-         <amount name="nan_count">46.0</amount>
+         <amount name="amount">46.0</amount>
       </ingredient>
       <ingredient ingredient_name="Green Olives">
-         <amount name="nan_count">119.0</amount>
+         <amount name="amount">119.0</amount>
       </ingredient>
       <ingredient ingredient_name="Green Peppers">
-         <amount name="nan_count">104.0</amount>
+         <amount name="amount">104.0</amount>
       </ingredient>
       <ingredient ingredient_name="Italian Sausage">
-         <amount name="nan_count">36.0</amount>
+         <amount name="amount">36.0</amount>
       </ingredient>
       <ingredient ingredient_name="Jalapeno Peppers">
-         <amount name="nan_count">111.0</amount>
+         <amount name="amount">111.0</amount>
       </ingredient>
       <ingredient ingredient_name="Kalamata Olives">
-         <amount name="nan_count">63.0</amount>
+         <amount name="amount">63.0</amount>
       </ingredient>
       <ingredient ingredient_name="Luganega Sausage">
-         <amount name="nan_count">35.0</amount>
+         <amount name="amount">35.0</amount>
       </ingredient>
       <ingredient ingredient_name="Mozzarella Cheese">
-         <amount name="nan_count">962.0</amount>
+         <amount name="amount">962.0</amount>
       </ingredient>
       <ingredient ingredient_name="Mushrooms">
-         <amount name="nan_count">189.0</amount>
+         <amount name="amount">189.0</amount>
       </ingredient>
       <ingredient ingredient_name="Onions">
-         <amount name="nan_count">35.0</amount>
+         <amount name="amount">35.0</amount>
       </ingredient>
       <ingredient ingredient_name="Oregano">
-         <amount name="nan_count">27.0</amount>
+         <amount name="amount">27.0</amount>
       </ingredient>
       <ingredient ingredient_name="Pancetta">
-         <amount name="nan_count">18.0</amount>
+         <amount name="amount">18.0</amount>
       </ingredient>
       <ingredient ingredient_name="Parmigiano Reggiano Cheese">
-         <amount name="nan_count">35.0</amount>
+         <amount name="amount">35.0</amount>
       </ingredient>
       <ingredient ingredient_name="Pears">
-         <amount name="nan_count">9.0</amount>
+         <amount name="amount">9.0</amount>
       </ingredient>
       <ingredient ingredient_name="Peperoncini verdi">
-         <amount name="nan_count">36.0</amount>
+         <amount name="amount">36.0</amount>
       </ingredient>
       <ingredient ingredient_name="Pepperoni">
-         <amount name="nan_count">203.0</amount>
+         <amount name="amount">203.0</amount>
       </ingredient>
       <ingredient ingredient_name="Pesto Sauce">
-         <amount name="nan_count">56.0</amount>
+         <amount name="amount">56.0</amount>
       </ingredient>
       <ingredient ingredient_name="Pineapple">
-         <amount name="nan_count">91.0</amount>
+         <amount name="amount">91.0</amount>
       </ingredient>
       <ingredient ingredient_name="Plum Tomatoes">
-         <amount name="nan_count">18.0</amount>
+         <amount name="amount">18.0</amount>
       </ingredient>
       <ingredient ingredient_name="Prosciutto">
-         <amount name="nan_count">9.0</amount>
+         <amount name="amount">9.0</amount>
       </ingredient>
       <ingredient ingredient_name="Prosciutto di San Daniele">
-         <amount name="nan_count">28.0</amount>
+         <amount name="amount">28.0</amount>
       </ingredient>
       <ingredient ingredient_name="Provolone Cheese">
-         <amount name="nan_count">26.0</amount>
+         <amount name="amount">26.0</amount>
       </ingredient>
       <ingredient ingredient_name="Red Onions">
-         <amount name="nan_count">382.0</amount>
+         <amount name="amount">382.0</amount>
       </ingredient>
       <ingredient ingredient_name="Red Peppers">
-         <amount name="nan_count">316.0</amount>
+         <amount name="amount">316.0</amount>
       </ingredient>
       <ingredient ingredient_name="Ricotta Cheese">
-         <amount name="nan_count">35.0</amount>
+         <amount name="amount">35.0</amount>
       </ingredient>
       <ingredient ingredient_name="Romano Cheese">
-         <amount name="nan_count">26.0</amount>
+         <amount name="amount">26.0</amount>
       </ingredient>
       <ingredient ingredient_name="Sliced Ham">
-         <amount name="nan_count">47.0</amount>
+         <amount name="amount">47.0</amount>
       </ingredient>
       <ingredient ingredient_name="Smoked Gouda Cheese">
-         <amount name="nan_count">26.0</amount>
+         <amount name="amount">26.0</amount>
       </ingredient>
       <ingredient ingredient_name="Soppressata Salami">
-         <amount name="nan_count">18.0</amount>
+         <amount name="amount">18.0</amount>
       </ingredient>
       <ingredient ingredient_name="Spinach">
-         <amount name="nan_count">198.0</amount>
+         <amount name="amount">198.0</amount>
       </ingredient>
       <ingredient ingredient_name="Sun-dried Tomatoes">
-         <amount name="nan_count">36.0</amount>
+         <amount name="amount">36.0</amount>
       </ingredient>
       <ingredient ingredient_name="Thai Sweet Chilli Sauce">
-         <amount name="nan_count">45.0</amount>
+         <amount name="amount">45.0</amount>
       </ingredient>
       <ingredient ingredient_name="Thyme">
-         <amount name="nan_count">9.0</amount>
+         <amount name="amount">9.0</amount>
       </ingredient>
       <ingredient ingredient_name="Tomato Sauce">
-         <amount name="nan_count">726.0</amount>
+         <amount name="amount">726.0</amount>
       </ingredient>
       <ingredient ingredient_name="Tomatoes">
-         <amount name="nan_count">520.0</amount>
+         <amount name="amount">520.0</amount>
       </ingredient>
       <ingredient ingredient_name="Zucchini">
-         <amount name="nan_count">49.0</amount>
+         <amount name="amount">49.0</amount>
       </ingredient>
       <ingredient ingredient_name="Nduja Salami">
-         <amount name="nan_count">18.0</amount>
+         <amount name="amount">18.0</amount>
       </ingredient>
    </file>
 </root>
