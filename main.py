@@ -42,7 +42,10 @@ def extract() -> Tuple[pd.Series, List[DescribedDataFrame]]:
 
 
 def concat_dataframes(description: pd.Series, dataframe_container: List[DescribedDataFrame]) -> DescribedDataFrame:
-    orders, order_details, pizzas, pizza_types = dataframe_container
+    orders, order_details, pizzas, pizza_types = dataframe_container["orders.csv"],\
+                                                 dataframe_container["order_details.csv"],\
+                                                 dataframe_container["pizzas.csv"],\
+                                                 dataframe_container["pizza_types.csv"]
 
     # Formatting orders' dates and times
     orders.set_index('order_id', inplace=True)
