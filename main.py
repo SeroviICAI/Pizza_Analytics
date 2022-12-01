@@ -29,7 +29,7 @@ class DescribedDataFrame(pd.DataFrame):
 
 
 def extract() -> Tuple[pd.Series, List[DescribedDataFrame]]:
-    dataframe_container = []
+    dataframe_container = {}
     temp = pd.read_csv('data/data_dictionary.csv', encoding='latin')
     description = pd.Series(data=list(temp['Description']), index=temp['Field'])
 
@@ -37,7 +37,7 @@ def extract() -> Tuple[pd.Series, List[DescribedDataFrame]]:
         if not csv_name == "data_dictionary.csv" and csv_name.endswith('.csv'):
             dataframe = DescribedDataFrame(pd.read_csv('data/' + csv_name, delimiter=',', encoding='latin'))
             dataframe.name = csv_name.split('.csv')[0]
-            dataframe_container.append(dataframe)
+            dataframe_container[csv_name] = dataframe
     return description, dataframe_container
 
 
@@ -197,7 +197,7 @@ def main():
     root = Element('root')
     comment = Comment("Brief analysis of nan's, nulls, data types and data counts of each dataframe")
     root.append(comment)
-    for dataframe_pd in dataframe_container:
+    for dataframe_pd in dataframe_container.values():
         # dataframe_pd.info()
         dataframe = SubElement(root, 'file', name='name')
         dataframe.text = dataframe_pd.name
@@ -231,7 +231,7 @@ def main():
     display(weeks)
 
     # Amount of total ingredients consumed by each type
-    pizza_types = dataframe_container[-1]
+    pizza_types = dataframe_container["pizza_types.csv"]
     total_count, weeks_ingredients = count_ingredients(dataframe_pd, pizza_types)
     print("\nTotal amount of ingredients:")
     display(total_count)
@@ -239,7 +239,7 @@ def main():
     # Amount and type of ingredients consumed each week
     weeks_ingredients.to_csv("processed_data/ingredients_weeks.csv", sep=',')
     print("\nIngredients per week:")
-    display(weeks_ingredients)
+    print(weeks_ingredients)
 
     # You can visualize some graphs via this function, however the report will be done on pdf, so animations
     # and other interactive resources cannot be implemented.
